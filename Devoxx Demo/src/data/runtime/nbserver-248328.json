@@ -1,0 +1,11 @@
+{
+  "base_url": "/", 
+  "hostname": "192.168.1.101", 
+  "notebook_dir": "/home/mathias/notebooks/notebooks", 
+  "password": false, 
+  "pid": 248328, 
+  "port": 8888, 
+  "secure": false, 
+  "token": "38cf0f8a10585314b31f5e994d6dfd432e02b8371ec438fa", 
+  "url": "http://192.168.1.101:8888/"
+}

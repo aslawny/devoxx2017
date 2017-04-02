@@ -1,0 +1,19 @@
+{
+ "display_name": "PySpark",
+ "language": "python",
+ "argv": [
+  "/opt/anaconda2/bin/python",
+  "-m",
+  "ipykernel",
+  "-f",
+  "{connection_file}"
+ ],
+ "env": {
+  "PYSPARK_PYTHON": "/opt/anaconda2/bin/python",
+  "PYSPARK_DRIVER_PYTHON": "/opt/anaconda2/bin/python",
+  "SPARK_HOME": "/usr/hdp/current/spark-client/",
+  "PYTHONPATH": "/usr/hdp/current/spark-client/python/:/usr/hdp/current/spark-client/python/lib/py4j-0.9-src.zip",
+  "PYTHONSTARTUP": "/usr/hdp/current/spark-client/python/pyspark/shell.py",
+  "PYSPARK_SUBMIT_ARGS": "--master yarn --deploy-mode client --driver-memory 512m --executor-memory 1024m --executor-cores 1 --num-executors 2 --conf spark.executorEnv.PYTHONPATH=/usr/hdp/current/spark-client/ --packages com.databricks:spark-csv_2.10:1.5.0 pyspark-shell"
+ }
+}
